@@ -167,3 +167,29 @@ header {
     	font-family: $font;
 	}
  }
+footer {
+	@extend .container;
+	background-color: $bg-color;
+	text-align: center;
+ }
+ .footer_container {
+ 	@extend .container;
+ 	width: 1080px;
+ 	text-align: center;
+ 	margin-top: 90px;
+ 	h4 {
+		color: #fff;
+		font-size: 30px;
+    	line-height: 40px;
+    	font-weight: 100;
+    	font-family: $font;
+	}
+	p {
+		color: $color;
+		font-family: $font;
+		font-size: 17px;
+		font-weight: 100;
+		line-height: 32px; 
+		margin-top: 10px;
+	}
+ }
