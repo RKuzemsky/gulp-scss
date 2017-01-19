@@ -55,6 +55,52 @@ header {
 		}
 	}
 }
+.dropdown {
+	position: relative;
+}
+.dropdown_content {
+	display: none;
+	position: absolute;
+	width: 180px;
+	margin: 0 !important;
+}
+.li_dropdown_container {
+	background-color: #fff;
+	padding: 5px 0;
+	position: relative;
+	margin-top: 10px;
+}
+.li_dropdown_container:after {
+	bottom: 100%;
+	left: 10%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 5px;
+	margin-left: -5px;
+}
+.dropdown_content li {
+	width: 100%;
+	margin: 10px 0;
+	text-align: left;
+}
+.dropdown_content li a {
+	color: #808080 !important;
+}
+.dropdown_content li a:hover {
+	color: #333 !important;
+}
+.dropdown_content li a:hover {
+	background-color: transparent !important;
+}
+.dropdown:hover .dropdown_content {
+	display: block;
+}
 .top_header {
 	@extend .container;
 	text-align: center;
