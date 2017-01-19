@@ -34,6 +34,24 @@ header {
 		}
 	}
 }
+.nav_btn {
+	display: none;	
+	float: right;
+	width: 20%;
+	height: auto;
+}
+.nav_span {
+	cursor: pointer;
+	float: right;
+	margin-top: 12px; 
+	span {
+		display: block !important;
+		width: 40px;
+		height: 2px;
+		margin-bottom: 8px;
+		background-color: $color;
+	}
+}
 .nav {
 	width: 70%;
 	height: auto;
@@ -239,3 +257,64 @@ footer {
 		margin-top: 10px;
 	}
  }
+
+ @media (max-width: 1110px) {
+	header {
+		width: 90%;
+	}
+	.item_container {
+		width: 90%;
+	}
+	.footer_container {
+		width: 90%;
+	}
+	.about_item {
+		width: 27%;
+	}
+}
+ @media (max-width: 900px) {
+	.top_img img {
+		max-width: 90%;
+	}
+	.big_img_container img {
+		max-width: 90%;
+	}
+	.top_header h2 {
+		padding: 0 25px;
+	}
+}
+ @media (max-width: 765px) {
+	.about_item {
+    	width: 60%;
+    	margin: 40px 0;
+	}
+	.top_desk_block {
+		width: 80%;
+	}
+}
+ @media (max-width: 575px) {
+ 	.header {
+ 		position: fixed;
+ 	}
+ 	.nav_list {
+ 		display: none;
+ 	}
+	.nav_btn {
+		display: block;
+	}
+	.dropdown_content {
+		display: none !important;
+	}
+	.nav_list {
+		width: 100%;
+		float: right;
+		li {
+			width: 100%;
+			display: block;
+			a {
+				padding: 15px 10px !important;
+				border-bottom: 1px solid #f1f1f1;
+			}
+		}
+	}	
+}

@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var concatCss = require('gulp-concat-css');
 var rename = require('gulp-rename');
 var minifyCss = require('gulp-clean-css');
 var prefix = require('gulp-autoprefixer');
@@ -16,7 +15,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('watch', function () {
-  	gulp.watch('css/style.min.css', ['css'])
+  	gulp.watch('scss/*.scss', ['css']);
 });
 
 gulp.task('default', ['css', 'watch']);
