@@ -1,0 +1,39 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+body {
+	
+}
+/*@font-face {
+	font-family: ProximaNovaSemibold;
+	src: url(../fonts/ProximaNovaSemibold.otf);
+}
+@font-face {
+	font-family: FontAwesome;
+	src: url(../fonts/FontAwesome.otf);
+}*/
+.fa {
+	 font-family: 'FontAwesome' !important; 
+}
+$color: #fff;
+$bg-color: #cf4647;
+$font: sans-serif;
+
+.container {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+}
