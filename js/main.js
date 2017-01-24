@@ -12,4 +12,20 @@ $( document ).ready(function() {
      touch_menu.removeAttr('style');
      }
    });
+
+$( "#popup_btn" ).click(function() {
+    $('.pop-up_container')
+      .animate({opacity: 1, top: '100px'}, 200)
+      .css('display', 'block');
+    $('.pop-up_bg').fadeIn(400);
+  });
+
+
+   $( ".close_btn" ).click(function() {
+    $('.pop-up_container')
+      .animate({opacity: 0, top: '-100px'}, 200)
+      .css('display', 'block');
+    $('.pop-up_bg').fadeOut(400);
+  });
+
 });

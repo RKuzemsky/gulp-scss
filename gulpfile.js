@@ -32,11 +32,18 @@ gulp.task('html', function () {
     .pipe(connect.reload());
 });
 
+//js
+gulp.task('js', function () {
+  gulp.src('js/main.js')
+    .pipe(connect.reload());
+});
+
 //watch
 gulp.task('watch', function () {
   	gulp.watch('scss/*.scss', ['css'])
   	gulp.watch('index.html', ['html'])
+    gulp.watch('js/main.js', ['js'])
 });
 
 //default
-gulp.task('default', ['connect', 'html', 'css', 'watch']);
+gulp.task('default', ['connect', 'js', 'html', 'css', 'watch']);
