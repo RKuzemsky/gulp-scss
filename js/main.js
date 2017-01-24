@@ -28,4 +28,11 @@ $( "#popup_btn" ).click(function() {
     $('.pop-up_bg').fadeOut(400);
   });
 
+   $( ".pop-up_bg" ).click(function() {
+    $('.pop-up_container')
+      .animate({opacity: 0, top: '-100px'}, 200)
+      .css('display', 'block');
+    $('.pop-up_bg').fadeOut(400);
+  });
+
 });
